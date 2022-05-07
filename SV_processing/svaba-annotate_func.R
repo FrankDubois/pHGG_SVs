@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-#file = files[1]
+#This function reads in a svaba vcf and returns an annotated data.table 
 make_nice_svaba_andcplot <- function(file) {
 ############### FUNCTIONS
 load_svaba <- function(files, mc.cores=mc.cores, unlist=FALSE, bad.remove=TRUE) {

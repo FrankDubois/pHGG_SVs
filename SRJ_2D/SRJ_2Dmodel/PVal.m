@@ -9,9 +9,7 @@ mat_size = size(mfull);
 
 % keep only upper diagonal part of mfull 
 mfull = triu(full(mfull));
-%divide all diagonal elements by 2 (because we only want to count events in
-%i,i bins once (we added mfull + mfull' which effectively counted them
-%twice)
+
 mfull(eye(mat_size)~=0) = diag(mfull)/2;
 %
 nume = sum(mfull(:));
@@ -28,10 +26,6 @@ else
         pa(eye(mat_size)~=0) = diag(pa)/2;
     end
 end
-    
-%export pa and mfull matrices to R from here%
-%dlmwrite('/xchip/beroukhimlab/Kiran/adjancencies/20190426mfull.txt', mfull, 'delimiter','\t','newline','pc','precision',13);
-%dlmwrite('/xchip/beroukhimlab/Kiran/adjancencies/20190426pa.txt', pa, 'delimiter','\t','newline','pc','precision',13);
 
 
 % divide tiles with positive values from zeros 
@@ -77,7 +71,7 @@ end
 
 % calcualte BH-FDR
 qFDR=mafdr(pval(:,1),'BHFDR','true');
-%Kiran added FDR_THRESHOLD as a global variable
+
 hits_idx=find(qFDR< FDR_THRESHOLD);
 tophits=length(hits_idx);
 pval_tophits = pval(1:tophits,:);

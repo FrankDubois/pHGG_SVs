@@ -11,8 +11,7 @@ FDR_THRESHOLD = 0.25;
 load ICGC_2D_SV_model.mat
 %% 
 
-%sv_file='/Volumes/xchip_beroukhimlab/ofer/DIPG/data/filtered_merged_pHGG_DIPG_Dec_unique_WGS_12_11_2017.txt';
-sv_file='/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200207_2dmodel/20200207_SVnew_filt.txt';
+sv_file='/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200207_2dmodel/20200207_SV.txt';
 
 SVTable=readtable(sv_file);
 EventLengthThreshold=1e3;
@@ -72,10 +71,10 @@ disp(strcat('total events after masked regions: ',num2str(length(events0))));
 %% 
 
 % events matrix
-mfull0=sparse(length(bins),length(bins)); % bins from pan cancer?
+mfull0=sparse(length(bins),length(bins)); % bins from pan cancer
 bins_event_tble0=zeros(length(events0),3);
 for c1 = 1:length(events0)
-    bini0=find(bins(:,1)==events0(c1,1) & bins(:,2)<=events0(c1,2) & bins(:,3)>=events0(c1,2)); % start? %>sort events into bins 
+    bini0=find(bins(:,1)==events0(c1,1) & bins(:,2)<=events0(c1,2) & bins(:,3)>=events0(c1,2));  % >sort events into bins 
     binj0=find(bins(:,1)==events0(c1,4) & bins(:,2)<=events0(c1,5) & bins(:,3)>=events0(c1,5)); 
     if ~isempty(bini0) && ~isempty(binj0)
         bins_event_tble0(c1,1) = bini0;
@@ -109,7 +108,7 @@ disp(strcat('total events after removing same bin same sample events: ',num2str(
 events_beforeLengThresh = events;
 %EventLengthThreshold = 100;
 %% remove below length threshold events
-below_length_th=(abs(events(:,5)-events(:,2))<EventLengthThreshold)&(events(:,1)==events(:,4)); % EventLengthThreshold -> 1kbp removes 1126 events!
+below_length_th=(abs(events(:,5)-events(:,2))<EventLengthThreshold)&(events(:,1)==events(:,4)); % EventLengthThreshold
 events(below_length_th,:)=[];
 bins_event_tble(below_length_th,:)=[];
 disp(strcat('total events after removing below length threshold: ',num2str(length(events))));
@@ -157,8 +156,8 @@ hits_table.uid = annotated_table.uid;
 hits_table.EVDNC = annotated_table.EVDNC;
 hits_table.QUALITY = annotated_table.QUALITY;
 hits_table.svtype = annotated_table.svtype;
-writetable(hits_table,'/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200210_2Dmodel/20200210new2Dhitstbl_q005.txt','delimiter','\t')
-writetable(annotated_table,'/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200210_2Dmodel/20200210new2Dannotatedtblq005.txt','delimiter','\t')
+writetable(hits_table,'/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200210_2Dmodel/202002102Dhitstbl_q005.txt','delimiter','\t')
+writetable(annotated_table,'/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200210_2Dmodel/20200210_2Dannotatedtblq005.txt','delimiter','\t')
  %% 
 %  bins_table=table();
 %  bins_table.chr = bins(:,1);

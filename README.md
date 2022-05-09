@@ -1,5 +1,5 @@
 # pHGG SVs
-This repository contains code used in figure generation and analysis of the pHGG cohort assoociatied witht he manuscript titled **"_Structural variants shape driver combinations and outcomes in pediatric high-grade glioma_"**. 
+This repository contains code used in figure generation and analysis of the pHGG cohort assoociatied with the manuscript titled **"_Structural variants shape driver combinations and outcomes in pediatric high-grade glioma_"**. 
 
 Author: Frank Dubois fdubois@broadinstitute.org
 

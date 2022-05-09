@@ -1,7 +1,13 @@
-# pHGG_SVs
-Main analysis code from the pHGG_SVs project
+# pHGG SVs
+This repository contains code used in figure generation and analysis of the pHGG cohort assoociatied witht he manuscript titled **"_Structural variants shape driver combinations and outcomes in pediatric high-grade glioma_"**. 
 
-##
+Author: Frank Dubois fdubois@broadinstitute.org
+
+Contact: Rameen Beroukhim rameen@broadinstitute.org; Pratiti Bandopadhaya pband@broadinstitute.org; Keith Ligon keith_ligon@dfci.harvard.edu
+
+# Citation
+A preprint of the manuscript is available [here](https://assets.researchsquare.com/files/rs-389596/v1_covered.pdf?c=1631862855).
+
 # Additional packages
 Below, documentation and installation information can be found for supporting packages used in the analysis \
 [Picard](https://github.com/broadinstitute/picard) \
@@ -32,8 +38,7 @@ Below, documentation and installation information can be found for supporting pa
 [Oncotator](https://github.com/broadinstitute/oncotator) \
 [CoSim](https://github.com/acranej/CoSim)
 
-# Citation
-A preprint of the manuscript is available [here](https://assets.researchsquare.com/files/rs-389596/v1_covered.pdf?c=1631862855).
+
 
 
 

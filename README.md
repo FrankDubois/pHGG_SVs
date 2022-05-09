@@ -1,7 +1,7 @@
-## pHGG_SVs
+# pHGG_SVs
 Main analysis code from the pHGG_SVs project
 
-
+##
 # Additional packages
 Below, documentation and installation information can be found for supporting packages used in the analysis \
 [Picard](https://github.com/broadinstitute/picard) \
@@ -32,6 +32,8 @@ Below, documentation and installation information can be found for supporting pa
 [Oncotator](https://github.com/broadinstitute/oncotator) \
 [CoSim](https://github.com/acranej/CoSim)
 
+# Citation
+A preprint of the manuscript is available [here](https://assets.researchsquare.com/files/rs-389596/v1_covered.pdf?c=1631862855).
 
 
 

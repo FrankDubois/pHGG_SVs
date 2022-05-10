@@ -3,7 +3,7 @@ This repository contains code used in figure generation and analysis of the pHGG
 
 Author: Frank Dubois fdubois@broadinstitute.org
 
-Contact: Rameen Beroukhim rameen@broadinstitute.org; Pratiti Bandopadhaya pband@broadinstitute.org; Keith Ligon keith_ligon@dfci.harvard.edu
+Contact: Rameen Beroukhim rameen@broadinstitute.org; Pratiti Bandopadhayay pband@broadinstitute.org; Keith Ligon keith_ligon@dfci.harvard.edu
 
 # Citation
 A preprint of the manuscript is available [here](https://assets.researchsquare.com/files/rs-389596/v1_covered.pdf?c=1631862855).

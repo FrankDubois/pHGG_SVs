@@ -1,3 +1,4 @@
+### this script filters the 2D hits
 require(gUtils)
 require(gTrack)
 SRJs_A <- fread('/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200227SRJ2D/20200227new2Dhitstbl_ql5_lt100.txt')

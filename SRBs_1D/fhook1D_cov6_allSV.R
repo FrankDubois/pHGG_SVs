@@ -1,3 +1,4 @@
+### this script performs the 1D analysis
 #########
 #create a vcf file
 library(data.table)

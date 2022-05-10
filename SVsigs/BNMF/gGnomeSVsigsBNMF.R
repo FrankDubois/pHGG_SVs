@@ -1,3 +1,4 @@
+### This script performs BNMF and generates plots
 library(reshape)
 library(gplots)
 library(ggplot2)

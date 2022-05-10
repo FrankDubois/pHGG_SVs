@@ -1,3 +1,5 @@
+# This script plots the fishHook outputs 
+
 require(data.table)
 require(gTrack)
 

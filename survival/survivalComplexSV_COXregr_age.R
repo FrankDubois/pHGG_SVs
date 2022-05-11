@@ -1,4 +1,4 @@
-### This script giveeess the survival analysis
+### This script gives the survival analysis
 library("survival")
 library("survminer")
 library(data.table)

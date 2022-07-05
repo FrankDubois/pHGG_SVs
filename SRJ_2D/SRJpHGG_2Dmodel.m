@@ -1,3 +1,4 @@
+% main SRJ_2D analysis code
 %set directory path% 
 pwd = '/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/matlab/SRJ_2Dmodel/' 
 addpath(genpath(pwd));
@@ -8,10 +9,10 @@ global FDR_THRESHOLD
 FDR_THRESHOLD = 0.25;
 %% 
 
-load ICGC_2D_SV_model.mat
+load ICGC_2D_SV_model.mat % load pan-cancer 2D background model, available at request
 %% 
-
-sv_file='/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200207_2dmodel/20200207_SV.txt';
+% read in SV input 
+sv_file='/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/data/20200207_2dmodel/20200207_SV.txt'; % path to pHGG SVs
 
 SVTable=readtable(sv_file);
 EventLengthThreshold=1e3;

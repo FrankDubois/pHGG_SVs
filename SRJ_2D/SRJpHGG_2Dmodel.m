@@ -1,6 +1,6 @@
 % main SRJ_2D analysis code
 %set directory path% 
-pwd = '/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/matlab/SRJ_2Dmodel/' 
+pwd = '/Users/fdubois/Dropbox (Partners HealthCare)/DIPG/matlab/SRJ_2Dmodel/' % path to helper functions and background model
 addpath(genpath(pwd));
 %% 
 

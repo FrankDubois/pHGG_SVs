@@ -36,7 +36,7 @@ Below, documentation and installation information can be found for supporting pa
 [gGnome](https://github.com/mskilab/gGnome) \
 [Shatterseek](https://github.com/parklab/ShatterSeek) \
 [Oncotator](https://github.com/broadinstitute/oncotator) \
-[CoSim](https://github.com/acranej/CoSim) \ 
+[CoSim](https://github.com/acranej/CoSim) \
 [SVSig](https://github.com/beroukhim-lab/SVsig)
 
 

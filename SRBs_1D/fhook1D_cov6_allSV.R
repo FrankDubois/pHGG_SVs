@@ -7,9 +7,9 @@ library(gUtils)
 library(fishHook)
 DIPG.base <-  "/xchip/beroukhimlab/Frank/DIPG/data/20190709_svaba_calls" 
 
-samplemaster <- fread('/xchip/beroukhimlab/Frank/DIPG/Rstuff/20200120fhook/20191125DIPGsampleMaster_cbio.txt')
-#keep only the csvs
-DIPG_csv <- fread('/xchip/beroukhimlab/Frank/DIPG/data/20200225fhook/20200225SVmafs.txt')
+# samplemaster <- fread('/xchip/beroukhimlab/Frank/DIPG/Rstuff/20200120fhook/20191125DIPGsampleMaster_cbio.txt') # not needed
+#read in SVs
+DIPG_csv <- fread('/xchip/beroukhimlab/Frank/DIPG/data/20200225fhook/20200225SVmafs.txt') # switch to your SV input file
 
 #load data and covariates here 
 LOCAL  <- FALSE
@@ -145,7 +145,7 @@ covGC_1K       <- Cov(GC_1K,          name = "GC_1K",             field = "score
 
 covsGenedens    <- Cov(gene_density, name = "gene_density", field = "score",type="numeric")
 covs_intFRAG         <- Cov(oldFRAG, name = "IntervalFragility", type = "interval")
-hetchromdata = readRDS('/xchip/beroukhimlab/Frank/DIPG/data/20200127fhook/hetchromdata.rds')
+hetchromdata = readRDS('/xchip/beroukhimlab/Frank/DIPG/data/20200127fhook/hetchromdata.rds') # tissue type/ lineage specific covariate check https://egg2.wustl.edu/roadmap/data/byFileType/ for other options
 hetchromCov = Cov(hetchromdata, name = 'Heterochromatin') ## instantiate interval covariate
 ##
 ####################overlapWithGenes############

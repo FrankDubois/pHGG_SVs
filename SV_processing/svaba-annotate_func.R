@@ -139,8 +139,7 @@ library(plyr)
 library(RCircos)
 
 print("...importing tracks")
-basedir <- "/xchip/beroukhimlab/Jeremiah/tracks"
-genes <- readRDS("/Volumes/xchip_beroukhimlab/Jeremiah/tracks/gr.allgenes.rds")
+genes <- readRDS("/pHGG_SVs/SV_processing/annotation_tracks/gr.allgenes.rds")
 genes <- genes[width(genes) < 2e6] 
 #cgc <- readRDS(file.path(basedir, 'gr.allgenes.rds'))
 #cgc = read.delim('/home/unix/marcin/DB/COSMIC/cancer_gene_census.tsv', strings = FALSE)
@@ -223,10 +222,10 @@ llr <- gr2dt(gr)
 llr$bk_msg <- llr$gstrand <- llr$gene <- llr$msg <- ""
 llr$elem_num <- -1
 
-gr.introns <- readRDS("/Volumes/xchip_beroukhimlab/Jeremiah/tracks/gr.introns.rds")
-gr.exons <- readRDS("/Volumes/xchip_beroukhimlab/Jeremiah/tracks/gr.exons.rds")
-gene.comp <- readRDS("/Volumes/xchip_beroukhimlab/Jeremiah/tracks/gr.intergenic.rds") 
-gr.tub <- readRDS("/Volumes/xchip_beroukhimlab/Jeremiah/tracks/master_db_29062016_ranges.rds")
+gr.introns <- readRDS("/pHGG_SVs/SV_processing/annotation_tracks/gr.introns.rds")
+gr.exons <- readRDS("/pHGG_SVs/SV_processing/annotation_tracks/gr.exons.rds")
+gene.comp <- readRDS("/pHGG_SVs/SV_processing/annotation_tracks/gr.intergenic.rds") 
+gr.tub <- readRDS("/pHGG_SVs/SV_processing/annotation_tracks/master_db_29062016_ranges.rds")
 
 ##
 print("...annotating L1")

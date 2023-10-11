@@ -212,7 +212,7 @@ genes_a = gr.sub(import('http://mskilab.com/fishHook/hg19/gencode.v19.genes.gtf'
     }
 }
   
-GZtad_gr_an = readRDS('/xchip/beroukhimlab/Frank/DIPG/data/20200127fhook/GZtad_gr_an.rds')
+GZtad_gr_an = readRDS('/.../pHGG_SVs/SRBs_1D/annotation_tracks/GZtad_gr_an.rds') # Switch to a track suitable to your tissue. This is a brain specific TAD track (of Germinal zone TAD boundaries from GSE77565) 
 colnames(DIPG_csv)
           
 all.RSB <- oneDModelDIPG(DIPG_csv, type = "SV", BINSIZE = 5e4, FDR = .25)
